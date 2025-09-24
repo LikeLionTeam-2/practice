@@ -22,10 +22,23 @@ const calculator = {
     },
 
     divide: function(num1, num2){
-        if(num2 <= 0){
-            console.log("0으로는 나눌 수 없습니다");
-            
+        if(num2 === 0){
+            return  "0 으로 나눌 수 없습니다";
         }
         return num1 / num2;
     }
+};
+
+const calResult = (num1, op , num2, result) => {
+    console.log(`${num1} ${op} ${num2} = ${result}`);
+    
 }
+
+const num1 = 2;
+const num2 = 3;
+
+calResult(num1, "+", num2, calculator.add(num1, num2));
+calResult(num1, "-", num2, calculator.substract(num1, num2));
+calResult(num1, "*", num2, calculator.multiply(num1, num2));
+calResult(num1, "/", num2, calculator.divide(num1, num2));
+calResult(num1, "/", 0, calculator.divide(num1, 0));
