@@ -1,0 +1,19 @@
+// 다음 변수들을 선언하고 값을 할당하세요
+// 1. 당신의 이름 (문자열)
+// 2. 나이 (숫자)
+// 3. 학생 여부 (불린)
+
+// 그리고 이 정보들을 이용해 자기소개 문장을 만들어 console.log로 출력하세요
+// 예: "안녕하세요, 저는 김철수이고 25살입니다. 학생입니다."
+
+const myname = "minseob Yang";
+const myage = 29;
+const amIstudent = myage >= 20 ? "입니다." :"이 아닙니다.";
+
+console.log("안녕하세요, 저는 " 
+    + myname + "이고 " 
+    + myage + "살입니다. "
+    + "학생" + amIstudent
+);
+
+
